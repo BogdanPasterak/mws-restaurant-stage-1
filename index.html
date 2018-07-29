@@ -14,11 +14,11 @@
     </nav>
   </header>
 
-  <main id="maincontent">
+  <main id="maincontent" class="inside">
     <section id="map-container">
       <div id="map"></div>
     </section>
-    <section>
+    <section id="restaurant-container">
       <div class="filter-options">
         <h2>Filter Results</h2>
         <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
@@ -34,7 +34,7 @@
 
   <script type="application/javascript" charset="utf-8" src="js/dbhelper.js"></script>
   <script type="application/javascript" charset="utf-8" src="js/main.js"></script>
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&libraries=places&callback=initMap"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyABcooCTAT_zKXi6VOHAI3nExrUd2RUQzA&callback=initMap"></script>
 
 
   <footer id="footer">
