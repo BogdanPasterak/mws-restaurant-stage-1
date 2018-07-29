@@ -4,18 +4,19 @@
 <head>
   <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
   <link rel="stylesheet" href="css/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Restaurant Reviews</title>
 </head>
 
 <body>
-  <header>
+  <header class="fixed">
     <nav>
       <h1><a href="/">Restaurant Reviews</a></h1>
     </nav>
   </header>
 
   <main id="maincontent" class="inside">
-    <section id="map-container">
+    <section id="map-container" class="fixed">
       <div id="map"></div>
     </section>
     <section id="restaurant-container">
@@ -37,7 +38,7 @@
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyABcooCTAT_zKXi6VOHAI3nExrUd2RUQzA&callback=initMap"></script>
 
 
-  <footer id="footer">
+  <footer id="footer" class="fixed">
     Copyright (c) 2017 <a href="/"><strong>Restaurant Reviews</strong></a> All Rights Reserved.
   </footer>
 
