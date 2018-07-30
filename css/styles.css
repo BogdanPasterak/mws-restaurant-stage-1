@@ -49,7 +49,8 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
   text-align: center;
   text-transform: uppercase;
   bottom: 0;
-  width: 100%;
+  left: 0;
+  right: 0;
 }
 /* ====================== Navigation ====================== */
 nav {
@@ -139,6 +140,7 @@ nav h1 a {
 header {
   width: 100%;
   height: 50px;
+  z-index: 10;
 }
 /* ====================== Restaurant Listing ====================== */
 #restaurants-list {
@@ -283,6 +285,31 @@ header {
 
 @media screen and (max-width: 750px) {
   .inside #map-container {
-    width: 100%;
+    width: 94%;
+    position: static;
+    padding: 60px 3% 10px;
+    height: 70vh;
+  }
+  #restaurant-container, #reviews-container {
+    width: 94%;
+    padding: 0 3%;
+  }
+  #breadcrumb {
+    width: 94%;
+    padding: 10px 3%;
+  }
+  .inside #map-container {
+    padding-top: 100px;
+  }
+  #restaurant-name {
+    margin-top: 10px;
+  }
+  nav h1 a {
+    letter-spacing: 7px;
+  }
+}
+@media screen and (max-width: 420px) {
+  nav h1 a {
+    letter-spacing: 3px;
   }
 }
