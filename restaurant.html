@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <!-- Normalize.css for better cross-browser consistency -->
@@ -18,7 +18,7 @@
       <h1><a tabindex="1" href="/">Restaurant Reviews</a></h1>
     </nav>
     <!-- Beginning breadcrumb -->
-    <ul id="breadcrumb" >
+    <ul id="breadcrumb" role="navigation" aria-label="Breadcrumb" >
       <li><a tabindex="2" href="/">Home</a></li>
     </ul>
     <!-- End breadcrumb -->
@@ -30,21 +30,21 @@
   <main id="maincontent">
     <!-- Beginning map -->
     <section tabindex="-1" id="map-container" class="fixed">
-      <div id="map" class="fixed"></div>
+      <div id="map" class="fixed" role="application"  aria-label="Map"></div>
     </section>
     <!-- End map -->
     <!-- Beginning restaurant -->
     <section id="restaurant-container">
-      <h1 tabindex="2" id="restaurant-name"></h1>
+      <h2 tabindex="3" id="restaurant-name"></h2>
       <img id="restaurant-img">
-      <p tabindex="3" id="restaurant-cuisine"></p>
-      <p tabindex="4" id="restaurant-address"></p>
-      <table tabindex="5" aria-label="opening hours" id="restaurant-hours"></table>
+      <p tabindex="4" id="restaurant-cuisine"></p>
+      <p tabindex="5" id="restaurant-address"></p>
+      <table tabindex="6" aria-label="opening hours" id="restaurant-hours"></table>
     </section>
     <!-- end restaurant -->
     <!-- Beginning reviews -->
     <section id="reviews-container">
-      <ul tabindex="6" id="reviews-list"></ul>
+      <ul tabindex="7" id="reviews-list"></ul>
     </section>
     <!-- End reviews -->
   </main>
@@ -62,7 +62,7 @@
   <!-- Main javascript file -->
   <script type="text/javascript" src="js/restaurant_info.js"></script>
   <!-- Google Maps -->
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyABcooCTAT_zKXi6VOHAI3nExrUd2RUQzA&libraries=places&callback=initMap"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3afrkE4nYFJbb2zoJm_5NIzdUiqqpH7k&libraries=places&callback=initMap"></script>
   <!-- End scripts -->
 
 </body>
